@@ -5,8 +5,6 @@ import path from "path";
 
 import { MDXRemote } from "next-mdx-remote/rsc";
 
-const content = "";
-
 export default function Home() {
   // const fullPath = join(postsDir || defaultPostsDir, filename);
 

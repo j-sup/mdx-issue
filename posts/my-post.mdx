@@ -1,0 +1,41 @@
+Here is a post about graphql
+
+# Neat stuff
+
+```graphql
+query GET_POSTS {
+  posts {
+    edges {
+      node {
+        id
+        title
+        date
+        featuredImage {
+          mediaDetails {
+            sizes {
+              sourceUrl
+            }
+          }
+        }
+        categories(first: 10) {
+          edges {
+            node {
+              name
+              slug
+              posts(first: 10) {
+                edges {
+                  node {
+                    id
+                    title
+                    date
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
